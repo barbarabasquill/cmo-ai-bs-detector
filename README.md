@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/32436302/README.md)
+
 <p align="center">
   <img src="assets/cmo-ai-bs-detector-cover.png" alt="The CMO's AI BS Detector book cover" width="420">
 </p>
