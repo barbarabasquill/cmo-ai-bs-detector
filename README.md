@@ -148,6 +148,36 @@ Each example follows the same three-step pattern:
 2. **What the detector caught**
 3. **Improved, human-approved version**
 
+├── easy-peezy-marketing-skills/ # 62 practical, agent-readable CMO workflows
+   ## Easy-Peezy Marketing Skills
+
+### 62 practical AI workflows for CMOs who want the work done—not another prompt-engineering hobby.
+
+The **Easy-Peezy Marketing Skills Library** helps marketing leaders make smarter decisions and produce useful deliverables without technical jargon, prompt theater, or corporate oatmeal.
+
+Use the library to:
+
+- Build integrated campaigns and ABM plays
+- Diagnose pipeline and revenue problems
+- Create content, offers, events, and lifecycle programs
+- Allocate budgets and prepare board narratives
+- Improve conversion, retention, pricing, and customer expansion
+- Audit AI output for unsupported claims and confident nonsense
+- Apply AI security and human-approval guardrails
+- Turn complicated GTM questions into executive-ready decisions
+
+Every skill includes the information AI needs, a focused workflow, an executive deliverable, practical guardrails, and success metrics.
+
+### Start here
+
+1. [Explore all 62 Easy-Peezy Marketing Skills](easy-peezy-marketing-skills/README.md)
+2. [Complete the Five-Minute CMO Market Brief](easy-peezy-marketing-skills/context/cmo-market-brief.md)
+3. [Choose a skill from the CMO Capability Map](easy-peezy-marketing-skills/docs/CAPABILITY-MAP.md)
+
+> **AI can do the work. The CMO still owns the judgment.**
+
+**Created by Barbara Basquill**
+
 ## Start in two minutes
 
 1. Open the [interactive detector](https://barbarabasquill.github.io/cmo-ai-bs-detector/).
