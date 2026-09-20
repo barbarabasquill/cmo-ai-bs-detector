@@ -6,7 +6,7 @@
 <h1 align="center">The CMO’s AI BS Detector</h1>
 
 <p align="center">
-  <strong>A field guide to hallucinations, corporate oatmeal, fake insights, and confident nonsense.</strong><br>
+  <strong>A CMO's field guide to hallucinations, corporate oatmeal, fake insights, and confident nonsense.</strong><br>
   No code. No jargon. No patience required.
 </p>
 
