@@ -1,1 +1,116 @@
-<!-- Detector coming soon -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A private, browser-based risk screen for AI-generated marketing content.">
+  <title>Run the BS Detector | The CMO's AI BS Detector</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#detector">Skip to detector</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="The CMO's AI BS Detector home">
+        <span class="brand-mark" aria-hidden="true">BS</span>
+        <span><strong>The CMO's AI BS Detector</strong><small>No code. No jargon. No patience required.</small></span>
+      </a>
+      <a class="text-link" href="https://github.com/barbarabasquill/cmo-ai-bs-detector">View the guide</a>
+    </div>
+  </header>
+
+  <main id="detector" class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">A local, private content risk screen</p>
+      <h1 id="page-title">Run the <span>BS Detector</span></h1>
+      <p class="lede">Paste AI-generated marketing copy. Get a 0–100 risk score, the phrases that deserve a raised eyebrow, and practical ways to repair them.</p>
+      <div class="privacy-note"><span aria-hidden="true">●</span> Your text stays in this browser. Nothing is uploaded, stored, or used for training.</div>
+    </section>
+
+    <section class="workspace" aria-label="Content analyzer">
+      <div class="panel input-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="step">Step 1</p>
+            <h2>Paste the marketing copy</h2>
+          </div>
+          <button id="sampleButton" class="button button-quiet" type="button">Try suspicious sample</button>
+        </div>
+
+        <label class="sr-only" for="contentInput">Marketing content to analyze</label>
+        <textarea id="contentInput" rows="14" maxlength="15000" placeholder="Paste a campaign brief, landing page, email, persona, board summary, or other AI-generated marketing content here…"></textarea>
+
+        <div class="input-footer">
+          <span id="contentCount" aria-live="polite">0 words · 0 characters</span>
+          <button id="clearButton" class="button button-quiet" type="button">Clear</button>
+        </div>
+
+        <button id="analyzeButton" class="button button-primary" type="button">Analyze the BS</button>
+        <p id="inputError" class="error" role="alert"></p>
+      </div>
+
+      <section id="results" class="panel results-panel" aria-labelledby="results-title" hidden>
+        <div class="panel-heading results-heading">
+          <div>
+            <p class="step">Step 2</p>
+            <h2 id="results-title">Your executive readout</h2>
+          </div>
+          <div class="result-actions">
+            <button id="copyButton" class="button button-quiet" type="button">Copy results</button>
+            <button id="downloadButton" class="button button-quiet" type="button">Download</button>
+          </div>
+        </div>
+
+        <div id="scoreCard" class="score-card" data-band="green">
+          <div class="score-gauge" role="img" aria-label="BS risk score">
+            <span id="scoreNumber">0</span><small>/100</small>
+          </div>
+          <div class="verdict-copy">
+            <p class="score-label">BS RISK SCORE</p>
+            <h3 id="verdict">CMO-Clean</h3>
+            <p id="summary"></p>
+          </div>
+        </div>
+
+        <div class="legend" aria-label="Score ranges">
+          <span><i class="dot green"></i>0–25 Clear</span>
+          <span><i class="dot yellow"></i>26–74 Review</span>
+          <span><i class="dot red"></i>75–100 High risk</span>
+        </div>
+
+        <section class="result-section" aria-labelledby="category-title">
+          <h3 id="category-title">Where the risk lives</h3>
+          <div id="categoryScores" class="category-list"></div>
+        </section>
+
+        <section class="result-section" aria-labelledby="flags-title">
+          <div class="section-heading">
+            <h3 id="flags-title">What deserves attention</h3>
+            <span id="flagCount" class="count-pill"></span>
+          </div>
+          <div id="flags" class="flag-list"></div>
+        </section>
+
+        <section class="result-section next-actions" aria-labelledby="actions-title">
+          <h3 id="actions-title">CMO next moves</h3>
+          <ol id="actions"></ol>
+        </section>
+
+        <aside class="reality-check">
+          <strong>Reality check:</strong> This tool flags risk signals; it does not prove that content is AI-generated or that a claim is false. Verify sources, customer evidence, assumptions, and regulated claims with the appropriate humans.
+        </aside>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p>Created by <strong>Barbara Basquill</strong></p>
+      <p>AI produced the output. A human still owns the outcome.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
