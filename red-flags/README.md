@@ -2,7 +2,7 @@
 
 **Spot the flags. Ask better questions. Make the fix. Launch with confidence.**
 
-See the Red Flags is an interactive marketing field guide and decision tool for CMOs and marketers. It helps users recognize five recurring AI-assisted marketing failure patterns, understand the business risk, ask better review questions, and choose a practical repair move.
+See the Red Flags is an interactive marketing field guide and decision tool for marketers. It helps users recognize six recurring marketing failure patterns, understand the business risk, ask better review questions, and choose a practical repair move.
 
 It is deliberately different from the main BS Detector:
 
@@ -15,12 +15,13 @@ It is deliberately different from the main BS Detector:
 - Five example concerns that can be loaded into the Radar
 - A tailored action card with questions, evidence requirements, and a quick fix
 - A hands-on **Example Copy Lab** with five fictional marketing samples
-- A complete guide to the five red flags:
+- A complete guide to the six red flags:
   1. Corporate Oatmeal
   2. Confident Liar
   3. Executive Yes-Man
   4. Fake Persona Syndrome
-  5. Strategy-Shaped Content
+  5. Sales-Ready Lead Mirage
+  6. Strategy-Shaped Content
 - Direct next steps to the Prompt Finder and BS Detector
 
 ## Privacy

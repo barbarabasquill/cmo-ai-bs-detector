@@ -44,15 +44,10 @@
           <p class="hero-sub"><strong>This is an interactive marketing field guide and decision tool—not another content analyzer.</strong> Use it when a campaign, persona, strategy, claim, or AI-generated draft feels wrong but you need to explain why and decide what happens next.</p>
           <a class="hero-button" href="#radar">OPEN THE RED FLAG RADAR <span aria-hidden="true">↓</span></a>
         </div>
-        <aside class="benefit-card" aria-label="Why a CMO should use this tool">
-          <p>WHY A CMO USES IT</p>
-          <h2>Turn a vague concern into a defensible decision.</h2>
-          <ul>
-            <li><span>01</span> Name the pattern without accusing anyone of using AI.</li>
-            <li><span>02</span> Ask the questions that expose missing evidence or weak strategy.</li>
-            <li><span>03</span> Give the team a practical fix—not a vague “make it better.”</li>
-          </ul>
-          <strong class="benefit-outcome">The payoff: faster reviews, clearer feedback, fewer expensive surprises.</strong>
+        <aside class="benefit-card" aria-label="Why marketers should use this tool">
+          <p>WHY MARKETERS SHOULD USE THIS</p>
+          <h2>Less guessing. Better marketing decisions.</h2>
+          <p class="benefit-statement"><span aria-hidden="true">✓</span><strong>Turn “something feels off” into clear questions, proof to request, and a practical fix—before the work goes live.</strong></p>
         </aside>
       </div>
       <div class="hero-rule" aria-hidden="true"></div>
@@ -63,7 +58,7 @@
         <div>
           <p class="section-kicker">01 / THE RED FLAG RADAR</p>
           <h2 id="radar-title">What feels off?</h2>
-          <p class="section-intro">Choose what you are reviewing, select the clues you noticed, or describe the concern in plain English. The Radar will match those clues to the most likely failure pattern and give you an action plan.</p>
+          <p class="section-intro"><strong>Three easy steps:</strong> choose what you are reviewing, click what seems wrong, and optionally tell us what you noticed. Then you will get the likely red flag and a clear action plan.</p>
         </div>
         <div class="privacy-card">
           <span class="privacy-dot" aria-hidden="true"></span>
@@ -83,6 +78,7 @@
             <label><input type="radio" name="deliverable" value="messaging"><span>Messaging or copy</span></label>
             <label><input type="radio" name="deliverable" value="persona"><span>Persona or research</span></label>
             <label><input type="radio" name="deliverable" value="report"><span>Report or executive brief</span></label>
+            <label><input type="radio" name="deliverable" value="leadgen"><span>Lead generation &amp; Sales handoff</span></label>
           </div>
         </fieldset>
 
@@ -95,6 +91,7 @@
             <label><input type="checkbox" name="symptom" value="invented-customer"><span><strong>Customer mind-reading</strong><small>Buyer behavior is presented as fact without research.</small></span></label>
             <label><input type="checkbox" name="symptom" value="tactic-list"><span><strong>A list pretending to be strategy</strong><small>There are channels and activities, but no choices.</small></span></label>
             <label><input type="checkbox" name="symptom" value="missing-decision"><span><strong>No clear decision</strong><small>The work never says what to approve, change, or stop.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="lead-quality-gap"><span><strong>Leads are being called sales-ready</strong><small>The campaign collects names or warms interest, but no buying intent or qualification is defined.</small></span></label>
           </div>
         </fieldset>
 
@@ -110,6 +107,7 @@
           <button type="button" data-sample="yesman">“Your campaign strategy is excellent”</button>
           <button type="button" data-sample="persona">“CISOs always prefer technical content”</button>
           <button type="button" data-sample="strategy">“Strategy: email, paid social, webinar”</button>
+          <button type="button" data-sample="leadgap">“Every form fill is a sales-ready lead”</button>
         </div>
 
         <div class="form-actions">
@@ -117,6 +115,7 @@
           <button id="resetButton" class="button button-quiet" type="reset">Clear</button>
         </div>
         <p id="radarError" class="form-error" role="alert"></p>
+        <p class="voila-note"><strong>THAT'S IT.</strong> Click the red button and—voilà—you will get the likely red flag, the questions to ask, the proof to request, and the quickest responsible fix.</p>
         <p class="matching-note">The Radar matches the clues you provide to a field-guide pattern. It does not fact-check claims, prove that content is false, or determine whether AI wrote it.</p>
       </form>
 
@@ -136,11 +135,11 @@
     <section class="how-section">
       <div class="shell">
         <p class="section-kicker">02 / HOW IT WORKS</p>
-        <h2>Recognize it. Question it. Repair it.</h2>
+        <h2>Step 1. Step 2. Step 3. Done.</h2>
         <ol class="how-grid">
-          <li><span>01</span><strong>Spot the clue.</strong><p>Select what you noticed instead of trying to diagnose the entire deliverable.</p></li>
-          <li><span>02</span><strong>Name the pattern.</strong><p>Get plain-English language for the likely red flag and the business risk it creates.</p></li>
-          <li><span>03</span><strong>Make the fix.</strong><p>Use the questions, evidence request, and practical repair move before approving the work.</p></li>
+          <li><span>STEP 1</span><strong>Choose the work.</strong><p>Tell the Radar whether you are reviewing a campaign, strategy, message, persona, report, or lead-generation program.</p></li>
+          <li><span>STEP 2</span><strong>Click what seems wrong.</strong><p>Select the clues you noticed. You can also add one short sentence in your own words.</p></li>
+          <li><span>STEP 3</span><strong>Get the action card.</strong><p>See the likely red flag, why it matters, what to ask, what proof you need, and how to fix it.</p></li>
         </ol>
       </div>
     </section>
@@ -159,7 +158,7 @@
     <section id="field-guide" class="guide-section" aria-labelledby="guide-title">
       <div class="shell">
         <p class="section-kicker">04 / THE FIVE RED FLAGS</p>
-        <h2 id="guide-title">Five patterns worth recognizing on sight.</h2>
+        <h2 id="guide-title">Six patterns worth recognizing on sight.</h2>
         <div id="flagGuide" class="flag-guide"></div>
       </div>
     </section>

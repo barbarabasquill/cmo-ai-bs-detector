@@ -78,7 +78,7 @@ const flags = {
     text: ["buyers want", "customers prefer", "always prefer", "ciso", "cmos", "decision-makers", "care most", "typically choose", "primary concern", "persona", "pain point"]
   },
   strategy: {
-    number: "05",
+    number: "06",
     title: "Strategy-Shaped Content",
     short: "A channel list in a strategy costume.",
     description: "The plan contains tactics, assets, and activity but never makes a strategic choice about audience, insight, offer, sequence, tradeoffs, ownership, or measurement.",
@@ -95,15 +95,35 @@ const flags = {
     promptHref: "../prompts/#turn-tactics-into-strategy",
     symptoms: ["tactic-list", "missing-decision"],
     text: ["email", "paid social", "webinar", "blog", "channels", "tactics", "content calendar", "campaign plan", "activities", "events", "syndication", "launch across"]
+  },
+  leadgap: {
+    number: "05",
+    title: "Sales-Ready Lead Mirage",
+    short: "A name in the database is not automatically a buyer.",
+    description: "A campaign built to create awareness, capture names, or warm interest is being presented as if it will deliver qualified, high-intent prospects who are ready for a Sales conversation.",
+    risk: "Sales trust, conversion, and pipeline risk",
+    why: "When Marketing and Sales expect different outcomes, good awareness or lead-generation work can look like failure—and Sales receives people who are not ready to buy.",
+    questions: [
+      "What exact job is this campaign meant to do: create awareness, capture leads, nurture interest, or produce sales-ready opportunities?",
+      "What actions, buying-intent signals, fit, and engagement score make a lead ready for Sales?",
+      "Who owns nurture, qualification, handoff, follow-up, and feedback when a lead is not ready?"
+    ],
+    evidence: "A clearly stated campaign goal, ideal-customer fit, buying-intent signals, meaningful engagement, lead-scoring rules, a Sales handoff agreement, and historical conversion data.",
+    fix: "Name the real campaign goal. Do not promise sales-ready leads unless the program includes agreed qualification rules, strong intent or engagement signals, a nurture path, and a clear Sales handoff.",
+    prompt: "Pipeline Reality Check",
+    promptHref: "../prompts/#pipeline-reality-check",
+    symptoms: ["lead-quality-gap"],
+    text: ["sales-ready", "sales ready", "mql", "qualified lead", "form fill", "form-fill", "leads for sales", "lead volume", "lead generation", "high intent", "high-intent", "engagement score", "lead score", "handoff", "nurture", "pipeline"]
   }
 };
 
 const deliverableWeights = {
-  campaign: { strategy: 2, oatmeal: 1, yesman: 1 },
+  campaign: { strategy: 2, oatmeal: 1, yesman: 1, leadgap: 1 },
   strategy: { strategy: 2, yesman: 2 },
   messaging: { oatmeal: 2, liar: 1 },
   persona: { persona: 3, liar: 1 },
-  report: { liar: 2, yesman: 1, strategy: 1 }
+  report: { liar: 2, yesman: 1, strategy: 1 },
+  leadgen: { leadgap: 5, strategy: 1, liar: 1 }
 };
 
 const deliverableLabels = {
@@ -111,7 +131,8 @@ const deliverableLabels = {
   strategy: "Strategy review",
   messaging: "Messaging or copy review",
   persona: "Persona or research review",
-  report: "Report or executive brief review"
+  report: "Report or executive brief review",
+  leadgen: "Lead generation and Sales handoff review"
 };
 
 const sampleScenarios = {
@@ -139,6 +160,11 @@ const sampleScenarios = {
     deliverable: "campaign",
     symptoms: ["tactic-list", "missing-decision"],
     text: "Our strategy is to run email, paid social, webinars, blogs, and events. The plan does not define the audience insight, offer, sequence, tradeoffs, owners, or business outcome."
+  },
+  leadgap: {
+    deliverable: "leadgen",
+    symptoms: ["lead-quality-gap"],
+    text: "The campaign goal is to collect 2,000 form fills, and every response is described as a sales-ready lead. No fit, buying-intent, engagement, qualification, nurture, or Sales handoff rules are defined."
   }
 };
 
@@ -177,6 +203,13 @@ const examples = [
     flag: "Strategy-Shaped Content",
     why: "This is an activity inventory. It makes no choice about audience, insight, offer, journey, tradeoffs, ownership, or measurement.",
     fix: "Connect the business goal to one buyer problem and strategic choice, then give every selected channel a specific job."
+  },
+  {
+    type: "Lead-generation promise",
+    quote: "This content-syndication campaign will deliver 1,500 sales-ready leads to the Sales team this quarter.",
+    flag: "Sales-Ready Lead Mirage",
+    why: "A content download may show awareness or early interest. It does not prove account fit, buying intent, meaningful engagement, or readiness for a Sales conversation.",
+    fix: "Call these responses what they are, define the signals required for Sales readiness, and add nurture, qualification, handoff, and feedback steps."
   }
 ];
 
@@ -223,7 +256,7 @@ function renderPrimary(flag) {
       </div>
       <div class="action-details">
         <div class="detail-block">
-          <h5>Why a CMO should care</h5>
+          <h5>Why a marketer should care</h5>
           <p>${escapeHtml(flag.why)}</p>
         </div>
         <div class="detail-block">
@@ -323,7 +356,7 @@ function renderExamples() {
 }
 
 function renderGuide() {
-  document.querySelector("#flagGuide").innerHTML = Object.values(flags).map(flag => `
+  document.querySelector("#flagGuide").innerHTML = Object.values(flags).sort((a, b) => a.number.localeCompare(b.number)).map(flag => `
     <article class="guide-card">
       <div class="guide-card-header">
         <div><span>RED FLAG ${escapeHtml(flag.number)}</span><h3>${escapeHtml(flag.title)}</h3></div>

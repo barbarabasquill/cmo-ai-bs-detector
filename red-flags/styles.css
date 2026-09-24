@@ -54,10 +54,8 @@ h1 em { font-style: normal; }
 .benefit-card { padding: 28px; border: 1px solid #444449; border-top: 5px solid var(--red); background: #111216e8; box-shadow: 0 26px 70px #0009; }
 .benefit-card > p { margin-bottom: 12px; color: var(--yellow); font-size: .67rem; font-weight: 900; letter-spacing: .18em; }
 .benefit-card h2 { margin-bottom: 25px; font-size: clamp(1.65rem, 3vw, 2.25rem); }
-.benefit-card ul { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
-.benefit-card li { display: grid; grid-template-columns: 32px 1fr; gap: 11px; color: #d5d5d9; font-size: .88rem; }
-.benefit-card li span { color: var(--red); font-weight: 900; }
-.benefit-outcome { display: block; margin-top: 25px; padding-top: 20px; border-top: 1px solid #3d3d41; color: var(--white); font-size: .87rem; }
+.benefit-statement { display: grid; grid-template-columns: 32px 1fr; gap: 12px; margin: 0; padding-top: 20px; border-top: 1px solid #3d3d41; color: #ededf0; font-size: .94rem; line-height: 1.6; }
+.benefit-statement span { display: grid; place-items: center; width: 27px; height: 27px; margin-top: 2px; border-radius: 50%; background: var(--red); color: var(--white); font-weight: 900; }
 
 .radar-section, .example-section, .response-section { padding-top: 82px; padding-bottom: 90px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 32px; }
@@ -103,6 +101,8 @@ h2 { margin-bottom: 18px; font-family: Georgia, "Times New Roman", serif; font-s
 .button-quiet { background: var(--soft); color: var(--ink); border: 1px solid var(--line); }
 .button-quiet:hover { background: #e3e3dd; }
 .form-error { min-height: 1.4em; margin: 9px 0 0; color: var(--red-dark); font-size: .82rem; font-weight: 750; }
+.voila-note { margin: 11px 0 0; padding: 12px 14px; background: #fff9cf; border-left: 4px solid var(--yellow); color: #45412a; font-size: .78rem; line-height: 1.5; }
+.voila-note strong { margin-right: 4px; color: var(--black); font-size: .7rem; letter-spacing: .08em; }
 .matching-note { margin: 12px 0 0; color: var(--muted); font-size: .72rem; line-height: 1.5; }
 
 .radar-results { margin-top: 52px; padding-top: 46px; border-top: 1px solid var(--line); }
@@ -141,7 +141,6 @@ h2 { margin-bottom: 18px; font-family: Georgia, "Times New Roman", serif; font-s
 
 .example-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 .example-card { padding: 25px; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--black); }
-.example-card:last-child { grid-column: 1 / -1; }
 .example-meta { display: flex; justify-content: space-between; gap: 15px; margin-bottom: 17px; }
 .example-meta span { color: var(--red); font-size: .65rem; font-weight: 900; letter-spacing: .12em; }
 .example-card blockquote { margin: 0 0 20px; padding: 16px 18px; border-left: 4px solid var(--red); background: #f2f2ed; font: 1.05rem/1.5 Georgia, serif; }
@@ -200,7 +199,7 @@ footer { padding: 42px 0; background: var(--black); color: var(--white); border-
   .symptom-grid, .how-grid, .example-grid, .flag-guide, .guide-points, .next-actions, .secondary-results { grid-template-columns: 1fr; }
   .how-grid li { min-height: 0; border-right: 0; border-bottom: 1px solid #393a3f; }
   .how-grid li:last-child { border-bottom: 0; }
-  .example-card:last-child, .guide-card:first-child { grid-column: auto; }
+  .guide-card:first-child { grid-column: auto; }
   .action-details { grid-template-columns: 1fr; }
   .detail-block.quick-fix, .action-links { grid-column: auto; }
   .results-heading, .footer-inner { align-items: stretch; flex-direction: column; }
