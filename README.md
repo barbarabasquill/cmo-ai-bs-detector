@@ -15,7 +15,7 @@
   ·
   <a href="https://barbarabasquill.github.io/cmo-ai-bs-detector/prompts/"><strong>Steal the Prompts</strong></a>
   ·
-  <a href="red-flags/corporate-oatmeal.md"><strong>See the Red Flags</strong></a>
+  <a href="red-flags/"><strong>See the Red Flags</strong></a>
 </p>
 
 ---
