@@ -15,13 +15,14 @@ It is deliberately different from the main BS Detector:
 - Five example concerns that can be loaded into the Radar
 - A tailored action card with questions, evidence requirements, and a quick fix
 - A hands-on **Example Copy Lab** with five fictional marketing samples
-- A complete guide to the six red flags:
+- A simple **Spot It → Do This Next** checklist for six red flags:
   1. Corporate Oatmeal
   2. Confident Liar
   3. Executive Yes-Man
   4. Fake Persona Syndrome
   5. Sales-Ready Lead Mirage
   6. Strategy-Shaped Content
+- A worked example showing why an ebook download is not automatically a sales-ready lead
 - Direct next steps to the Prompt Finder and BS Detector
 
 ## Privacy

@@ -355,20 +355,4 @@ function renderExamples() {
   });
 }
 
-function renderGuide() {
-  document.querySelector("#flagGuide").innerHTML = Object.values(flags).sort((a, b) => a.number.localeCompare(b.number)).map(flag => `
-    <article class="guide-card">
-      <div class="guide-card-header">
-        <div><span>RED FLAG ${escapeHtml(flag.number)}</span><h3>${escapeHtml(flag.title)}</h3></div>
-        <span>${escapeHtml(flag.risk)}</span>
-      </div>
-      <p><strong>${escapeHtml(flag.short)}</strong> ${escapeHtml(flag.description)}</p>
-      <div class="guide-points">
-        <div><h4>Ask</h4><p>${escapeHtml(flag.questions[0])}</p></div>
-        <div><h4>Fix</h4><p>${escapeHtml(flag.fix)}</p></div>
-      </div>
-    </article>`).join("");
-}
-
 renderExamples();
-renderGuide();
