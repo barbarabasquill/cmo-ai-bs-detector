@@ -36,7 +36,7 @@ const flags = {
     fix: "Create a verification queue. Remove, qualify, or clearly label every material claim that cannot be traced to an approved source.",
     prompt: "Verify the Claims",
     promptHref: "../prompts/#verify-the-claims",
-    symptoms: ["unsupported"],
+    symptoms: ["unsupported", "vanity-metrics"],
     text: ["percent", "%", "study", "research shows", "customers see", "guarantee", "proven", "according to", "industry-leading", "roi", "reduce costs", "increase revenue", "quoted"]
   },
   yesman: {
@@ -74,7 +74,7 @@ const flags = {
     fix: "Separate known evidence from inference. Label the proposed persona insight as a hypothesis and define the fastest way to test it with real customers or data.",
     prompt: "Challenge My Assumptions",
     promptHref: "../prompts/#challenge-my-assumptions",
-    symptoms: ["invented-customer"],
+    symptoms: ["invented-customer", "audience-gap"],
     text: ["buyers want", "customers prefer", "always prefer", "ciso", "cmos", "decision-makers", "care most", "typically choose", "primary concern", "persona", "pain point"]
   },
   strategy: {
@@ -93,7 +93,7 @@ const flags = {
     fix: "Rewrite the plan around one audience, one evidence-based problem, one strategic choice, and a sequenced journey. Give every tactic a job, owner, measure, and reason to exist.",
     prompt: "Turn Tactics into Strategy",
     promptHref: "../prompts/#turn-tactics-into-strategy",
-    symptoms: ["tactic-list", "missing-decision"],
+    symptoms: ["tactic-list", "missing-decision", "audience-gap", "vanity-metrics"],
     text: ["email", "paid social", "webinar", "blog", "channels", "tactics", "content calendar", "campaign plan", "activities", "events", "syndication", "launch across"]
   },
   leadgap: {
@@ -112,7 +112,7 @@ const flags = {
     fix: "Name the real campaign goal. Do not promise sales-ready leads unless the program includes agreed qualification rules, strong intent or engagement signals, a nurture path, and a clear Sales handoff.",
     prompt: "Pipeline Reality Check",
     promptHref: "../prompts/#pipeline-reality-check",
-    symptoms: ["lead-quality-gap"],
+    symptoms: ["lead-quality-gap", "vanity-metrics"],
     text: ["sales-ready", "sales ready", "mql", "qualified lead", "form fill", "form-fill", "leads for sales", "lead volume", "lead generation", "high intent", "high-intent", "engagement score", "lead score", "handoff", "nurture", "pipeline"]
   }
 };

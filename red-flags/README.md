@@ -12,6 +12,7 @@ It is deliberately different from the main BS Detector:
 ## What the page includes
 
 - An interactive **Red Flag Radar** based on deliverable type, observed clues, and an optional plain-English description
+- Nine selectable clues, including unclear audiences, vanity metrics, and sales-ready-lead expectation gaps
 - Five example concerns that can be loaded into the Radar
 - A tailored action card with questions, evidence requirements, and a quick fix
 - A hands-on **Example Copy Lab** with five fictional marketing samples

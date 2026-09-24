@@ -70,8 +70,8 @@ h2 { margin-bottom: 18px; font-family: Georgia, "Times New Roman", serif; font-s
 
 .radar-panel { padding: clamp(22px, 4vw, 38px); background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--red); box-shadow: 0 16px 45px #1111; }
 .radar-panel fieldset { margin: 0 0 30px; padding: 0; border: 0; }
-.radar-panel legend, .observation-field > label { display: block; width: 100%; margin-bottom: 14px; font-weight: 850; }
-.radar-panel legend > span, .observation-field > label > span { margin-right: 9px; color: var(--red); font-size: .68rem; letter-spacing: .12em; }
+.radar-panel legend, .observation-field > label { display: block; width: 100%; margin-bottom: 16px; font-size: 1.12rem; font-weight: 850; }
+.radar-panel legend > span, .observation-field > label > span { display: inline-block; margin-right: 10px; padding: 5px 8px; border-radius: 3px; background: var(--red); color: var(--white); font-size: .84rem; line-height: 1; letter-spacing: .08em; vertical-align: 2px; }
 .radar-panel legend small, .observation-field label small { margin-left: 5px; color: var(--muted); font-size: .73rem; font-weight: 600; }
 .choice-row { display: flex; flex-wrap: wrap; gap: 9px; }
 .choice-row label { position: relative; }
