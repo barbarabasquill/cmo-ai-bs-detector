@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="An interactive, private prompt finder and copy-ready prompt library for CMOs and marketers using ChatGPT or Claude.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Steal the Prompts | The CMO's AI BS Detector">
+  <meta property="og:description" content="Choose the prompt. Add your facts. Make the final call.">
+  <meta property="og:image" content="https://barbarabasquill.github.io/cmo-ai-bs-detector/assets/cmo-ai-bs-detector-cover.png">
+  <meta property="og:url" content="https://barbarabasquill.github.io/cmo-ai-bs-detector/prompts/">
+  <title>Steal the Prompts | The CMO's AI BS Detector</title>
+  <link rel="canonical" href="https://barbarabasquill.github.io/cmo-ai-bs-detector/prompts/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#prompt-finder">Skip to the prompt finder</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="The CMO's AI BS Detector home">
+        <span class="brand-mark" aria-hidden="true">BS</span>
+        <span>
+          <strong>The CMO's AI BS Detector</strong>
+          <small>No code. No jargon. No patience required.</small>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="../">Run the BS Detector</a>
+        <a href="https://github.com/barbarabasquill/cmo-ai-bs-detector">Explore the guide <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">THE CMO'S COPY-READY PROMPT LIBRARY</p>
+          <h1 id="page-title">Steal the<br><em>Prompts<span class="red">.</span></em></h1>
+          <p class="hero-deck">Choose the prompt. Add your facts. <strong>Make the final call.</strong></p>
+          <p class="hero-sub">Tell the Easy-Peezy Prompt Finder what you need. It will recommend the strongest match, tailor it for ChatGPT or Claude, and help you turn a vague request into useful work.</p>
+          <a class="hero-button" href="#prompt-finder">FIND MY PROMPT <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="The CMO's AI BS Detector book cover">
+          <div class="art-halo" aria-hidden="true"></div>
+          <img src="../assets/cmo-ai-bs-detector-cover.png" alt="The CMO's AI BS Detector cover with a masked figure, red light, and yellow tagline">
+        </div>
+      </div>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <section id="prompt-finder" class="finder-section shell" aria-labelledby="finder-title">
+      <div class="section-heading finder-heading">
+        <div>
+          <p class="section-kicker">01 / THE EASY-PEEZY PROMPT FINDER</p>
+          <h2 id="finder-title">What do you need AI to help you do?</h2>
+          <p class="section-intro">Use plain English. A sentence such as “challenge my campaign strategy” is plenty.</p>
+        </div>
+        <div class="privacy-card">
+          <span class="privacy-dot" aria-hidden="true"></span>
+          <div>
+            <strong>Private by design.</strong>
+            <p>Your search and optional details stay in your browser. Nothing is uploaded, stored, tracked, or sent to ChatGPT or Claude. You choose where—and whether—to use the finished prompt.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="finderForm" class="finder-panel" novalidate>
+        <label for="finderQuery">Tell the finder what you want to accomplish</label>
+        <div class="search-row">
+          <input id="finderQuery" name="finderQuery" type="search" maxlength="240" autocomplete="off" placeholder="Example: Turn my webinar results into an executive summary">
+          <button class="button button-primary" type="submit">Find My Prompt</button>
+        </div>
+        <fieldset class="tool-picker">
+          <legend>Which tool will you use?</legend>
+          <label><input type="radio" name="tool" value="universal" checked><span>Works with either</span></label>
+          <label><input type="radio" name="tool" value="chatgpt"><span>ChatGPT</span></label>
+          <label><input type="radio" name="tool" value="claude"><span>Claude</span></label>
+        </fieldset>
+        <div class="example-searches" aria-label="Example searches">
+          <span>Try:</span>
+          <button type="button" data-example="Find unsupported claims and statistics">Verify the claims</button>
+          <button type="button" data-example="Make this marketing copy sound more human">Fix robotic copy</button>
+          <button type="button" data-example="Challenge my campaign strategy and assumptions">Pressure-test a campaign</button>
+          <button type="button" data-example="Prioritize target accounts for an ABM campaign">Prioritize accounts</button>
+        </div>
+        <p id="finderError" class="form-error" role="alert"></p>
+      </form>
+
+      <section id="finderResults" class="finder-results" aria-labelledby="results-title" hidden>
+        <div class="results-heading">
+          <div>
+            <p class="section-kicker">YOUR BEST MATCHES</p>
+            <h3 id="results-title">Start with this one.</h3>
+          </div>
+          <button id="newSearchButton" class="button button-quiet" type="button">Start a new search</button>
+        </div>
+        <div id="resultCards" class="result-grid" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section class="how-section">
+      <div class="shell">
+        <p class="section-kicker">02 / HOW IT WORKS</p>
+        <h2>Three steps. No prompt-engineering hobby required.</h2>
+        <ol class="how-grid">
+          <li><span>01</span><strong>Describe the job.</strong><p>Say what you need in the same language you would use with a smart teammate.</p></li>
+          <li><span>02</span><strong>Shape the prompt.</strong><p>Add your facts, choose your AI tool, and select any useful Prompt Power-Ups.</p></li>
+          <li><span>03</span><strong>Make the call.</strong><p>Copy the prompt, use it in an approved AI tool, and review the answer before anyone acts.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="library" class="library-section shell" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">03 / BROWSE THE COMPLETE LIBRARY</p>
+          <h2 id="library-title">Twelve prompts worth keeping.</h2>
+          <p class="section-intro">Prefer to browse? Every prompt is here, organized by the marketing job it helps you finish.</p>
+        </div>
+      </div>
+
+      <div id="categoryFilters" class="category-filters" role="group" aria-label="Filter prompts by category">
+        <button type="button" class="is-active" data-category="all" aria-pressed="true">All prompts</button>
+        <button type="button" data-category="audit" aria-pressed="false">Audit &amp; verify</button>
+        <button type="button" data-category="repair" aria-pressed="false">Repair the work</button>
+        <button type="button" data-category="strategy" aria-pressed="false">Strategy &amp; campaigns</button>
+        <button type="button" data-category="revenue" aria-pressed="false">Revenue &amp; ABM</button>
+      </div>
+
+      <div id="promptLibrary" class="prompt-grid"></div>
+    </section>
+
+    <section id="prompt-builder" class="builder-section" aria-labelledby="builder-title" hidden>
+      <div class="shell">
+        <div class="builder-heading">
+          <div>
+            <p class="section-kicker">04 / MAKE IT YOURS</p>
+            <h2 id="builder-title">Build your copy-ready prompt.</h2>
+            <p id="selectedPromptPurpose" class="section-intro"></p>
+          </div>
+          <span id="selectedToolBadge" class="tool-badge"></span>
+        </div>
+
+        <div class="builder-grid">
+          <div class="customizer-panel">
+            <div class="selected-prompt-label">
+              <span>SELECTED PROMPT</span>
+              <h3 id="selectedPromptName"></h3>
+            </div>
+
+            <div class="field-grid">
+              <label>Company or product <span>Optional</span><input id="companyInput" type="text" maxlength="160" placeholder="Example: Acme Security Platform"></label>
+              <label>Target audience <span>Optional</span><input id="audienceInput" type="text" maxlength="200" placeholder="Example: Enterprise CISOs in financial services"></label>
+              <label class="field-wide">Facts, evidence, or source material <span>Optional</span><textarea id="evidenceInput" rows="5" maxlength="5000" placeholder="Paste approved facts, source notes, performance data, customer evidence, or links. Do not include confidential information unless your organization permits it."></textarea></label>
+              <label class="field-wide">Deliverable, constraints, or tone <span>Optional</span><textarea id="constraintsInput" rows="4" maxlength="2000" placeholder="Example: One-page executive brief, direct tone, include risks and owners, avoid unsupported ROI claims."></textarea></label>
+            </div>
+
+            <fieldset class="builder-tool-picker">
+              <legend>Format this prompt for</legend>
+              <label><input type="radio" name="builderTool" value="universal"><span>Either tool</span></label>
+              <label><input type="radio" name="builderTool" value="chatgpt"><span>ChatGPT</span></label>
+              <label><input type="radio" name="builderTool" value="claude"><span>Claude</span></label>
+            </fieldset>
+
+            <fieldset class="power-ups">
+              <legend>Prompt Power-Ups <small>Optional commands to make the answer more useful</small></legend>
+              <div id="powerUpOptions" class="power-up-grid"></div>
+            </fieldset>
+          </div>
+
+          <aside class="prompt-output" aria-labelledby="finished-prompt-title">
+            <div class="prompt-output-heading">
+              <div><span>READY TO COPY</span><h3 id="finished-prompt-title">Your finished prompt</h3></div>
+              <button id="copyPromptButton" class="button button-yellow" type="button">Copy Prompt</button>
+            </div>
+            <pre id="generatedPrompt" tabindex="0"></pre>
+            <p id="copyStatus" class="copy-status" role="status" aria-live="polite"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="guardrail-section shell" aria-labelledby="guardrail-title">
+      <div class="guardrail-card">
+        <p class="section-kicker">05 / THE CMO REALITY CHECK</p>
+        <h2 id="guardrail-title">A better prompt is still not a permission slip.</h2>
+        <ul>
+          <li>Use nonconfidential information and an AI tool approved by your organization.</li>
+          <li>Verify every material fact, quotation, statistic, source, and customer claim.</li>
+          <li>Review regulated, legal, privacy, security, or reputational issues with the appropriate expert.</li>
+          <li>Treat the output as a draft. A human still owns the decision and the outcome.</li>
+        </ul>
+        <a class="detector-cta" href="../"><span>CHECK THE RESULT</span><strong>Run the BS Detector <span aria-hidden="true">↗</span></strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div><span>THE CMO'S AI BS DETECTOR</span><p>AI produced the output. A human still owns the outcome.</p></div>
+      <div><p>Created by <strong>Barbara Basquill</strong></p><a href="https://www.linkedin.com/in/enterprisemarketing/">Connect on LinkedIn ↗</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
