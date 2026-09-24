@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="An interactive field guide that helps CMOs recognize five common AI marketing red flags, ask better questions, and make practical fixes before launch.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="See the Red Flags | The CMO's AI BS Detector">
+  <meta property="og:description" content="Spot the flags. Ask better questions. Make the fix. Launch with confidence.">
+  <meta property="og:image" content="https://barbarabasquill.github.io/cmo-ai-bs-detector/assets/cmo-ai-bs-detector-cover.png">
+  <meta property="og:url" content="https://barbarabasquill.github.io/cmo-ai-bs-detector/red-flags/">
+  <title>See the Red Flags | The CMO's AI BS Detector</title>
+  <link rel="canonical" href="https://barbarabasquill.github.io/cmo-ai-bs-detector/red-flags/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#radar">Skip to the Red Flag Radar</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="../" aria-label="The CMO's AI BS Detector home">
+        <span class="brand-mark" aria-hidden="true">BS</span>
+        <span>
+          <strong>The CMO's AI BS Detector</strong>
+          <small>No code. No jargon. No patience required.</small>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="../">Run the BS Detector</a>
+        <a href="../prompts/">Find a Prompt</a>
+        <a href="https://github.com/barbarabasquill/cmo-ai-bs-detector">Explore the guide <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">THE CMO'S INTERACTIVE MARKETING FIELD GUIDE</p>
+          <h1 id="page-title">See the<br><em>Red Flags<span class="red">.</span></em></h1>
+          <p class="hero-deck">Spot the flags. Ask better questions. <strong>Make the fix. Launch with confidence.</strong></p>
+          <p class="hero-sub"><strong>This is an interactive marketing field guide and decision tool—not another content analyzer.</strong> Use it when a campaign, persona, strategy, claim, or AI-generated draft feels wrong but you need to explain why and decide what happens next.</p>
+          <a class="hero-button" href="#radar">OPEN THE RED FLAG RADAR <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="benefit-card" aria-label="Why a CMO should use this tool">
+          <p>WHY A CMO USES IT</p>
+          <h2>Turn a vague concern into a defensible decision.</h2>
+          <ul>
+            <li><span>01</span> Name the pattern without accusing anyone of using AI.</li>
+            <li><span>02</span> Ask the questions that expose missing evidence or weak strategy.</li>
+            <li><span>03</span> Give the team a practical fix—not a vague “make it better.”</li>
+          </ul>
+          <strong class="benefit-outcome">The payoff: faster reviews, clearer feedback, fewer expensive surprises.</strong>
+        </aside>
+      </div>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </section>
+
+    <section id="radar" class="radar-section shell" aria-labelledby="radar-title">
+      <div class="section-heading radar-heading">
+        <div>
+          <p class="section-kicker">01 / THE RED FLAG RADAR</p>
+          <h2 id="radar-title">What feels off?</h2>
+          <p class="section-intro">Choose what you are reviewing, select the clues you noticed, or describe the concern in plain English. The Radar will match those clues to the most likely failure pattern and give you an action plan.</p>
+        </div>
+        <div class="privacy-card">
+          <span class="privacy-dot" aria-hidden="true"></span>
+          <div>
+            <strong>Private by design.</strong>
+            <p>Your selections and notes stay in your browser. Nothing is uploaded, stored, tracked, or used for training.</p>
+          </div>
+        </div>
+      </div>
+
+      <form id="radarForm" class="radar-panel" novalidate>
+        <fieldset class="deliverable-picker">
+          <legend><span>STEP 1</span> What are you reviewing?</legend>
+          <div class="choice-row">
+            <label><input type="radio" name="deliverable" value="campaign" checked><span>Campaign</span></label>
+            <label><input type="radio" name="deliverable" value="strategy"><span>Strategy</span></label>
+            <label><input type="radio" name="deliverable" value="messaging"><span>Messaging or copy</span></label>
+            <label><input type="radio" name="deliverable" value="persona"><span>Persona or research</span></label>
+            <label><input type="radio" name="deliverable" value="report"><span>Report or executive brief</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="symptom-picker">
+          <legend><span>STEP 2</span> Which clues have you noticed? <small>Select all that apply.</small></legend>
+          <div class="symptom-grid">
+            <label><input type="checkbox" name="symptom" value="vague"><span><strong>Polished but vague</strong><small>It sounds impressive but says very little.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="unsupported"><span><strong>Claims without proof</strong><small>Numbers, quotes, or “facts” lack evidence.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="agreement"><span><strong>Suspiciously agreeable</strong><small>No assumptions, risks, or alternatives are challenged.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="invented-customer"><span><strong>Customer mind-reading</strong><small>Buyer behavior is presented as fact without research.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="tactic-list"><span><strong>A list pretending to be strategy</strong><small>There are channels and activities, but no choices.</small></span></label>
+            <label><input type="checkbox" name="symptom" value="missing-decision"><span><strong>No clear decision</strong><small>The work never says what to approve, change, or stop.</small></span></label>
+          </div>
+        </fieldset>
+
+        <div class="observation-field">
+          <label for="observation"><span>STEP 3</span> Describe what you noticed <small>Optional</small></label>
+          <textarea id="observation" maxlength="600" rows="4" placeholder="Example: The plan lists email, paid social, and a webinar, but it never explains the audience insight, strategic choice, sequence, or owner."></textarea>
+        </div>
+
+        <div class="sample-searches" aria-label="Sample concerns">
+          <span>TRY A SAMPLE:</span>
+          <button type="button" data-sample="oatmeal">“Best-in-class, innovative solution”</button>
+          <button type="button" data-sample="liar">“Customers reduce costs by 47%”</button>
+          <button type="button" data-sample="yesman">“Your campaign strategy is excellent”</button>
+          <button type="button" data-sample="persona">“CISOs always prefer technical content”</button>
+          <button type="button" data-sample="strategy">“Strategy: email, paid social, webinar”</button>
+        </div>
+
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">Show My Red Flags</button>
+          <button id="resetButton" class="button button-quiet" type="reset">Clear</button>
+        </div>
+        <p id="radarError" class="form-error" role="alert"></p>
+        <p class="matching-note">The Radar matches the clues you provide to a field-guide pattern. It does not fact-check claims, prove that content is false, or determine whether AI wrote it.</p>
+      </form>
+
+      <section id="radarResults" class="radar-results" aria-labelledby="result-title" hidden>
+        <div class="results-heading">
+          <div>
+            <p class="section-kicker">YOUR RED FLAG ACTION CARD</p>
+            <h3 id="result-title">Start here.</h3>
+          </div>
+          <span id="reviewContext" class="context-badge"></span>
+        </div>
+        <div id="primaryResult" aria-live="polite"></div>
+        <div id="secondaryResults" class="secondary-results"></div>
+      </section>
+    </section>
+
+    <section class="how-section">
+      <div class="shell">
+        <p class="section-kicker">02 / HOW IT WORKS</p>
+        <h2>Recognize it. Question it. Repair it.</h2>
+        <ol class="how-grid">
+          <li><span>01</span><strong>Spot the clue.</strong><p>Select what you noticed instead of trying to diagnose the entire deliverable.</p></li>
+          <li><span>02</span><strong>Name the pattern.</strong><p>Get plain-English language for the likely red flag and the business risk it creates.</p></li>
+          <li><span>03</span><strong>Make the fix.</strong><p>Use the questions, evidence request, and practical repair move before approving the work.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="example-lab" class="example-section shell" aria-labelledby="example-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">03 / EXAMPLE COPY LAB</p>
+          <h2 id="example-title">Can you spot what is wrong?</h2>
+          <p class="section-intro">Read each realistic marketing sample, make your call, and reveal the answer. These examples are fictional and intentionally flawed.</p>
+        </div>
+      </div>
+      <div id="exampleGrid" class="example-grid"></div>
+    </section>
+
+    <section id="field-guide" class="guide-section" aria-labelledby="guide-title">
+      <div class="shell">
+        <p class="section-kicker">04 / THE FIVE RED FLAGS</p>
+        <h2 id="guide-title">Five patterns worth recognizing on sight.</h2>
+        <div id="flagGuide" class="flag-guide"></div>
+      </div>
+    </section>
+
+    <section class="response-section shell" aria-labelledby="response-title">
+      <div class="response-card">
+        <div>
+          <p class="section-kicker">05 / THE CMO RESPONSE</p>
+          <h2 id="response-title">A red flag is a reason to investigate—not a conviction.</h2>
+          <p>Do not accuse the writer, agency, or AI. Point to the exact weakness, request the missing evidence, make the repair, and keep a human accountable for the final decision.</p>
+        </div>
+        <ol>
+          <li><span>STOP</span> Pause publication or approval when the risk is material.</li>
+          <li><span>ASK</span> Use the exact questions from the action card.</li>
+          <li><span>VERIFY</span> Confirm claims with an owner, primary source, or customer evidence.</li>
+          <li><span>REPAIR</span> Use the recommended prompt and review the revised work.</li>
+        </ol>
+        <div class="next-actions">
+          <a href="../prompts/"><span>REPAIR THE WORK</span><strong>Find the right prompt <span aria-hidden="true">↗</span></strong></a>
+          <a href="../"><span>CHECK THE RESULT</span><strong>Run the BS Detector <span aria-hidden="true">↗</span></strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div><span>THE CMO'S AI BS DETECTOR</span><p>AI produced the output. A human still owns the outcome.</p></div>
+      <div><p>Created by <strong>Barbara Basquill</strong></p><a href="https://www.linkedin.com/in/enterprisemarketing/">Connect on LinkedIn ↗</a></div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
